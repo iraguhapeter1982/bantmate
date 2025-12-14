@@ -1,4 +1,4 @@
-# Bentmate
+# Bantmate
 
 A modern Next.js application built with TypeScript, Tailwind CSS, and the App Router. This project serves as a great starting point for learning Next.js development.
 
@@ -14,7 +14,7 @@ A modern Next.js application built with TypeScript, Tailwind CSS, and the App Ro
 ## 📁 Project Structure
 
 ```
-bentmate/
+Bantmate/
 ├── app/                  # App Router pages and layouts
 │   ├── about/           # About page
 │   │   └── page.tsx
@@ -32,11 +32,13 @@ bentmate/
 ## 🛠️ Getting Started
 
 1. **Install dependencies:**
+
    ```bash
    npm install
    ```
 
 2. **Run the development server:**
+
    ```bash
    npm run dev
    ```
@@ -55,14 +57,16 @@ bentmate/
 
 This project uses Tailwind CSS for styling. The configuration includes:
 
-- Custom color palette for the Bentmate brand
+- Custom color palette for the Bantmate brand
 - Responsive design utilities
 - Custom component classes in `globals.css`
 
 ## 📱 Components
 
 ### Navbar
+
 A responsive navigation component with:
+
 - Desktop and mobile layouts
 - Animated hamburger menu
 - Smooth transitions
@@ -82,6 +86,7 @@ This project demonstrates:
 ## 🔧 Customization
 
 Feel free to customize:
+
 - Brand colors in `tailwind.config.js`
 - Component styles in `globals.css`
 - Layout structure in `app/layout.tsx`
@@ -90,6 +95,7 @@ Feel free to customize:
 ## 📚 Next Steps
 
 To extend this project, consider adding:
+
 - More pages and routes
 - API routes for backend functionality
 - Database integration

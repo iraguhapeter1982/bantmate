@@ -5,7 +5,7 @@ export default function AboutPage() {
     <div className="max-w-4xl mx-auto space-y-8">
       {/* Page header */}
       <div className="text-center space-y-4">
-        <h1 className="text-4xl font-bold text-gray-800">About Bentmate</h1>
+        <h1 className="text-4xl font-bold text-gray-800">About Bantmate</h1>
         <p className="text-xl text-gray-600">
           Learn more about our mission and what makes us unique
         </p>
@@ -18,7 +18,7 @@ export default function AboutPage() {
           <h2 className="text-2xl font-semibold text-gray-800">Our Story</h2>
           <div className="space-y-4 text-gray-600">
             <p>
-              Bentmate was created as a learning project to demonstrate modern web development 
+              Bantmate was created as a learning project to demonstrate modern web development 
               practices using Next.js and Tailwind CSS. This project showcases the power of 
               the App Router and component-based architecture.
             </p>
@@ -29,7 +29,7 @@ export default function AboutPage() {
             </p>
             <p>
               Whether you're just starting your web development journey or looking to 
-              explore Next.js 13+ features, Bentmate provides a solid starting point 
+              explore Next.js 13+ features, Bantmate provides a solid starting point 
               with best practices built in.
             </p>
           </div>

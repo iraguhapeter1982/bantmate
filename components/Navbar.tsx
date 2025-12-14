@@ -19,7 +19,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center py-4">
           {/* Logo/Brand */}
           <Link href="/" className="text-2xl font-bold text-primary-600 hover:text-primary-700 transition-colors">
-            Bentmate
+            Bantmate
           </Link>
 
           {/* Desktop Navigation Links */}

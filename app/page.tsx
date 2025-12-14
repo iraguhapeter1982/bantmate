@@ -6,7 +6,7 @@ export default function HomePage() {
       {/* Hero section */}
       <section className="text-center space-y-6">
         <h1 className="text-5xl font-bold text-gray-800">
-          Welcome to <span className="text-primary-600">Bentmate</span>
+          Welcome to <span className="text-primary-600">Bantmate</span>
         </h1>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
           Your journey into modern web development starts here. 

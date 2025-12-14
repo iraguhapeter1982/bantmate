@@ -7,9 +7,9 @@ const inter = Inter({ subsets: ['latin'] })
 
 // Metadata for SEO (Search Engine Optimization)
 export const metadata = {
-  title: 'Bentmate - Welcome',
-  description: 'Welcome to Bentmate - Your awesome web application',
-  keywords: 'bentmate, web app, nextjs',
+  title: 'Bantmate - Welcome',
+  description: 'Welcome to Bantmate - Your awesome web application',
+  keywords: 'bantmate, web app, nextjs',
 }
 
 // Root layout component that wraps all pages
@@ -33,7 +33,7 @@ export default function RootLayout({
         {/* Footer appears on all pages */}
         <footer className="bg-gray-800 text-white py-6 mt-auto">
           <div className="container text-center">
-            <p>&copy; 2025 Bentmate. Built with Next.js and Tailwind CSS.</p>
+            <p>&copy; 2025 Bantmate. Built with Next.js and Tailwind CSS.</p>
           </div>
         </footer>
       </body>
