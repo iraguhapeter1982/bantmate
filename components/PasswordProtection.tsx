@@ -131,7 +131,7 @@ export default function PasswordProtection({ children }: PasswordProtectionProps
         {/* Footer note */}
         <div className="text-center">
           <p className="text-sm text-gray-500">
-            Don't have access? Contact us for early access.
+            Don't have access? Contact us for early access!
           </p>
         </div>
       </div>
