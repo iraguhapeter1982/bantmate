@@ -1,15 +1,25 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Navbar from '@/components/Navbar'
+import PasswordProtection from '@/components/PasswordProtection'
 
 // Configure the Inter font from Google Fonts
 const inter = Inter({ subsets: ['latin'] })
 
 // Metadata for SEO (Search Engine Optimization)
+// Block search engines if password protection is enabled
+const isPasswordProtected = !!process.env.NEXT_PUBLIC_LAUNCH_PASSWORD
+
 export const metadata = {
   title: 'Bantmate - Welcome',
   description: 'Welcome to Bantmate - Your awesome web application',
   keywords: 'bantmate, web app, nextjs',
+  ...(isPasswordProtected && {
+    robots: {
+      index: false,
+      follow: false,
+    },
+  }),
 }
 
 // Root layout component that wraps all pages
@@ -22,20 +32,22 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} min-h-screen bg-gray-50`}>
-        {/* Navigation bar appears on all pages */}
-        <Navbar />
-        
-        {/* Main content area where page content will be rendered */}
-        <main className="container py-8">
-          {children}
-        </main>
-        
-        {/* Footer appears on all pages */}
-        <footer className="bg-gray-800 text-white py-6 mt-auto">
-          <div className="container text-center">
-            <p>&copy; 2025 Bantmate. Built with Next.js and Tailwind CSS.</p>
-          </div>
-        </footer>
+        <PasswordProtection>
+          {/* Navigation bar appears on all pages */}
+          <Navbar />
+          
+          {/* Main content area where page content will be rendered */}
+          <main className="container py-8">
+            {children}
+          </main>
+          
+          {/* Footer appears on all pages */}
+          <footer className="bg-gray-800 text-white py-6 mt-auto">
+            <div className="container text-center">
+              <p>&copy; 2025 Bantmate. Built with Next.js and Tailwind CSS.</p>
+            </div>
+          </footer>
+        </PasswordProtection>
       </body>
     </html>
   )
